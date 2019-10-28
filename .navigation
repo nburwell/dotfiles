@@ -1,0 +1,8 @@
+# open folder with fuzzy finder command line search
+
+export PRIMARY_WORK_FOLDER="~/invoca"
+
+proj ()
+{
+  cd $PRIMARY_WORK_FOLDER/$(ls $PRIMARY_WORK_FOLDER | fzf)
+}
